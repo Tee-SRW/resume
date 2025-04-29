@@ -1,113 +1,229 @@
 <main>
-  <div class="header">
-    <div class="temp">
-      <img class="proflieImg" src="proflie.jpg" alt="" />
-      <div class="name-container">
-        <div class="name-chlid">
-          <div class="name">Sorawit</div>
-          <div class="name">Weng</div>
-          <div class="contact">084-823-3387 · wyr.sorawit&#64;gmail.com</div>
-        </div>
+  <div class="container">
+    <div class="left-block">
+      <img class="proflieImg" src="profile.jpg" alt="" />
+
+      @switch (selectedTab) { @case ("about") {
+      <div
+        class="sidebar-tab"
+        (click)="tabChanged('about')"
+        style="color: #f5705b; border-color: #f5705b"
+      >
+        <div class="menu">About</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('exprience')">
+        <div class="menu">Exprience</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('skills')">
+        <div class="menu">Skills</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('education')">
+        <div class="menu">Education</div>
+      </div>
+      } @case ("exprience") {
+      <div class="sidebar-tab" (click)="tabChanged('about')">
+        <div class="menu">About</div>
+      </div>
+      <div
+        class="sidebar-tab"
+        (click)="tabChanged('exprience')"
+        style="color: #f5705b; border-color: #f5705b"
+      >
+        <div class="menu">Exprience</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('skills')">
+        <div class="menu">Skills</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('education')">
+        <div class="menu">Education</div>
+      </div>
+      } @case ("skills") {
+      <div class="sidebar-tab" (click)="tabChanged('about')">
+        <div class="menu">About</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('exprience')">
+        <div class="menu">Exprience</div>
+      </div>
+      <div
+        class="sidebar-tab"
+        (click)="tabChanged('skills')"
+        style="color: #f5705b; border-color: #f5705b"
+      >
+        <div class="menu">Skills</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('education')">
+        <div class="menu">Education</div>
+      </div>
+      } @case ("education") {
+      <div class="sidebar-tab" (click)="tabChanged('about')">
+        <div class="menu">About</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('exprience')">
+        <div class="menu">Exprience</div>
+      </div>
+      <div class="sidebar-tab" (click)="tabChanged('skills')">
+        <div class="menu">Skills</div>
+      </div>
+      <div
+        class="sidebar-tab"
+        (click)="tabChanged('education')"
+        style="color: #f5705b; border-color: #f5705b"
+      >
+        <div class="menu">Education</div>
+      </div>
+      } }
+
+      <div class="contact-link">
+        <a
+          href="https://www.linkedin.com/in/sorawit-weng-601796289/"
+          style="color: white; font-size: 3.5rem"
+        >
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a
+          href="https://github.com/Tee-SRW"
+          style="color: white; font-size: 3.5rem; margin-left: 1rem"
+          ><i class="fa fa-github"></i
+        ></a>
       </div>
     </div>
-  </div>
 
-  <div class="exprience">
-    <div class="title">Exprience</div>
-    <div>Wittech Development Co., Ltd.</div>
-    <div>June 2022 - Dec 2022</div>
-    <div>Intern</div>
-    <div>
-      <ul style="list-style-type: none">
-        <li>
-          - Implemented source code of new applications, completing within tight
-          deadlines.
-        </li>
-        <li>
-          - Tested code for bugs or technical issues, debugging to fix errors.
-        </li>
-        <li>
-          - Produced clean, efficient and bug-free code for software development
-          projects through debugging, testing and code reviews.
-        </li>
-        <li>- Built reusable code to utilise for other projects.</li>
-        <li>- Contributed to back-end experience and collaborated on APIs.</li>
-        <li>
-          - Developed wireframes for new screen layouts and redesigned existing
-          layouts, increasing user efficiency.
-        </li>
-        <li>
-          - Designed layout and graphics to enhance aesthetics and appearance of
-          website.
-        </li>
-        <li>
-          - Improved web design and usability through UX testing. Integrated
-          advanced UI principles for user-centred design.
-        </li>
-        <li>- Website https://research.science.kmitl.ac.th/</li>
-      </ul>
-    </div>
+    <div class="right-block">
+      <div class="text-box">
+        @switch (selectedTab) { @case ("about") {
+        <div class="text-container">
+          <div class="about">
+            <div class="title">About</div>
+            <div class="line"></div>
+            <!-- <hr style="border-bottom: 0.5rem solid #f5705b" /> -->
+            <div style="font-size: 3rem; margin-bottom: 0.8rem">
+              Sorawit Weng
+            </div>
+            <div style="display: flex">
+              <div style="font-size: 1.7rem">084-823-3387</div>
+              <div style="font-size: 1.7rem; margin-left: 1rem">
+                wyr.sorawit&#64;gmail.com
+              </div>
+            </div>
+          </div>
+          <div class="profile" style="margin-top: 2rem">
+            <div>
+              I earned my degree in Computer Science from KMITL. With a strong
+              interest in both software and hardware technologies, I am a
+              software developer with a proven ability to adapt in both
+              self-learning and team environments, consistently focused on
+              delivering high-quality results.
+            </div>
+          </div>
+          <div class="line-end-content"></div>
+        </div>
+        } @case ("exprience") {
+        <div class="text-container">
+          <div class="exprience">
+            <div class="title">Exprience</div>
+            <div class="line"></div>
+            <div class="exp-company">
+              <div class="company">Wittech Development Co., Ltd.</div>
+              <div class="date">June 2022 - Dec 2022</div>
+            </div>
+            <div class="job-position">Intern</div>
+            <div>
+              Design and develop software based on user requirements.
+              Implemented source code for new applications, meeting tight
+              deadlines. Tested code for bugs and technical issues, debugging to
+              ensure error-free execution. Produced clean, efficient, and
+              bug-free code through thorough debugging, testing, and code
+              reviews. Built reusable code for use in other projects and
+              contributed to backend development, collaborating on APIs.
+              Developed wireframes for new screen layouts and redesigned
+              existing ones, improving user efficiency. Designed layouts and
+              graphics to enhance the aesthetics and overall appearance of the
+              website. Improved web design and usability through UX testing,
+              integrating advanced UI principles to ensure user-centered design.
+            </div>
+            <div class="line-end-content"></div>
 
-    <div>Jowit Global Co.,Ltd.</div>
-    <div>Jan 2024 - Oct 2024</div>
-    <div>Software Developer</div>
-    <div>
-      <ul style="list-style-type: none">
-        <li>
-          - Developed a report extraction program to retrieve data from the
-          database
-        </li>
-        <li>
-          - Studied the parking management software to optimize it according to
-          requirements
-        </li>
-        <li>- Learned basic hardware integration and setup, including:</li>
-      </ul>
-      <ul style="list-style-type: disc" class="example">
-        <li>Thermo printer</li>
-        <li>Card reader</li>
-        <li>Coin dispenser</li>
-      </ul>
+            <br />
+            <div class="exp-company">
+              <div class="company">Jowit Global Co.,Ltd.</div>
+              <div class="date">Jan 2024 - Oct 2024</div>
+            </div>
+            <div class="job-position">Software Developer</div>
+            <div>
+              <div>
+                I have experience in desktop application development for Windows
+                using C# and ASP.NET (C#), with PostgreSQL and pgAdmin for
+                database management. I utilized LINQ in C# to efficiently manage
+                data from lists. Additionally, I employed Bitbucket and
+                Sourcetree for version control, ensuring smooth collaboration
+                and code management. I developed a report extraction program to
+                retrieve data from the database and optimized parking management
+                software according to specific requirements. I also gained
+                hands-on experience with embedded systems and microcontrollers,
+                learning the setup and usage of devices such as thermo printers,
+                card readers, and other related hardware.
+              </div>
+            </div>
+            <div class="line-end-content"></div>
+          </div>
+        </div>
+        } @case ("skills") {
+        <div class="text-container">
+          <div class="project">
+            <div class="title">Project</div>
+            <div class="line"></div>
+            <div>Resume Project</div>
+            <div>Using Angular version 19</div>
+            <div>https://github.com/Tee-SRW/resume</div>
+            <div class="line-end-content"></div>
+          </div>
+          <div class="skill">
+            <div class="title">Skills</div>
+            <div class="line"></div>
+            <div>
+              C#, React, Next.js, Node.js, HTML, CSS, Javascript, Python, Java,
+              LinQ, SQL, UX/UI, ASP.NET Skill
+            </div>
+            <div class="line-end-content"></div>
+          </div>
+          <div class="tools">
+            <div class="title">Tools</div>
+            <div class="line"></div>
+            <div>
+              Visual Studio 2012, Visual Studio Code, PostgreSQL, DBeaver,
+              BitBucket, Source Tree(Git), GitHub, pgAdmin, Figma, MongoDB Tools
+            </div>
+            <div class="line-end-content"></div>
+          </div>
+        </div>
+        } @case ("education") {
+        <div class="text-container">
+          <div class="education">
+            <div class="title">Education</div>
+            <div class="line"></div>
+            <div>King Mongkut's Institute of Technology Ladkrabang</div>
+            <div>BKK - Thailand</div>
+            <div>Bachelor of Computer Science GPA 3.08</div>
+            <div>June 2023</div>
+            <div>
+              Coursework: Operating Systems, Design patterns in Object-oriented
+              Programming, Software Engineering, Software Analysis and Design,
+              Database Systems, Object-oriented Programming, Data Structures and
+              Algorithm, Analysis and Design of Algorithms and Programming
+              Fundamentals
+            </div>
+            <div class="line-end-content"></div>
+          </div>
+          <div class="language">
+            <div class="title">Language</div>
+            <div class="line"></div>
+            <div>English Toeic 660</div>
+            <div class="line-end-content"></div>
+          </div>
+        </div>
+        } }
+      </div>
     </div>
-  </div>
-  <div class="project">
-    <div class="title">Project</div>
-    <ul>
-      <li></li>
-    </ul>
-  </div>
-  <div class="skill">
-    <div class="title">Skill</div>
-    <div>
-      C#, React, Next.js, HTML, CSS, Javascript, Python, Java, LinQ, SQL
-    </div>
-  </div>
-  <div class="tools">
-    <div class="title">Tools</div>
-    <div>
-      Visual Studio 2012, Visual Studio Code, PostgreSQL, DBeaver, Source
-      Tree(Git), GitHub, pgAdmin
-    </div>
-  </div>
-  <div class="education">
-    <div class="title">Education</div>
-    <div>King Mongkut's Institute of Technology Ladkrabang</div>
-    <div>BKK - Thailand</div>
-    <div>Bachelor of Computer Science GPA 3.08</div>
-    <div>June 2023</div>
-    <ul style="list-style-type: disc">
-      <li>
-        Coursework: Operating Systems, Design patterns in Object-oriented
-        Programming, Software Engineering, Software Analysis and Design,
-        Database Systems, Object-oriented Programming, Data Structures and
-        Algorithm, Analysis and Design of Algorithms and Programming
-        Fundamentals
-      </li>
-    </ul>
-  </div>
-  <div class="language">
-    <div class="title">Language</div>
-    <div>English Toeic 660</div>
   </div>
 </main>
 

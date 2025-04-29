@@ -1,48 +1,135 @@
-/* main {
-  background-color: rgb(219, 156, 219);
-  color: aliceblue;
-} */
-
-.header {
-  font-size: 10vh;
-  font-weight: bold;
-  position: relative;
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
+main {
+  font-size: 1.5rem;
 }
 
-.temp {
+.about {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+}
+
+.left-block {
+  height: 100vh;
+  width: 25vw;
+  /* background-color: rgb(255, 51, 0); */
+  background-color: #222222;
+  margin-left: 5vw;
+  color: aliceblue;
+
+  position: relative;
+}
+
+.sidebar-tab {
+  height: 5%;
+  width: 100%;
+  /* background-color: rgb(58, 138, 48); */
+  /* border-bottom: solid; */
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.616);
+  margin-top: 2%;
+}
+
+.line {
+  /* border-bottom: 0.1rem solid rgb(255, 209, 209); */
+}
+
+.menu {
+  padding-top: 2%;
+  padding-left: 12%;
+}
+
+.sidebar-tab:hover {
+  cursor: pointer;
+  /* background-color: rgb(105, 105, 105); */
+  color: #f5705b;
+
+  border-color: #f5705b;
+}
+
+.contact-link {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
+}
+
+.right-block {
+  /* position: absolute; */
+  height: 100vh;
+  width: 70vw;
+  /* margin-left: 30vw; */
+  /* padding: 5vh 2.5vw 5vh 5vw; */
+  /* background-color: rgb(194, 181, 66); */
+
+  position: relative;
+  color: black;
+}
+
+.text-box {
+  /* background-color: rgb(216, 244, 255); */
+  background-color: rgb(255, 255, 255);
+  height: 95%;
+  width: 95%;
+  margin: 2.5% auto auto 2.5%;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.text-box::-webkit-scrollbar {
+  display: none;
+}
+
+.text-container {
+  padding: 2.5%;
+}
+
+.line {
+  border-bottom: 0.5rem solid #f5705b;
+  width: 13% !important;
+
+  margin-bottom: 1rem;
 }
 
 .proflieImg {
-  height: 50vh;
+  /* height: 50vh;
   width: auto;
-  border-radius: 30%;
-}
-
-.name-container {
-  display: inline-block;
-}
-
-.name-chlid {
-}
-
-.contact {
-  font-size: 3vh;
+  border-radius: 30%; */
+  height: auto;
+  width: 25vw;
+  /* margin-top: 0.5vw;
+  margin-left: 1vw; */
 }
 
 .title {
-  font-size: 6vh;
+  font-size: 3rem;
   font-weight: bold;
 }
 
-.exprience {
-  height: 100vh;
-  width: 100vw;
-  font-size: 2.5vh;
+.exp-company {
+  font-size: 1.7rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  text-align: left;
+}
+
+.date {
+  text-align: right;
+}
+
+.line-end-content {
+  border-bottom: 0.2rem solid #f5705b;
+
+  width: 80% !important;
+  margin: 1.6rem auto;
+  margin-bottom: 3rem;
+}
+
+.job-position {
+  margin: 0.8rem 0;
 }
