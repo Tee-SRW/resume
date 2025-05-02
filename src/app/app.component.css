@@ -136,6 +136,14 @@ main {
   margin-left: 1rem;
 }
 
+.researchdir {
+  color: #f5705b;
+}
+
+.icon-link {
+  color: #f5705b;
+}
+
 .name {
   font-size: 3rem;
   margin-bottom: 0.8rem;
