@@ -1,7 +1,7 @@
 <main>
   <div class="container">
     <div class="left-block">
-      <img class="proflieImg" src="profile.jpg" alt="" />
+      <img class="profileImg" src="profile.jpg" alt="" />
 
       @switch (selectedTab) { @case ("about") {
       <div
@@ -76,13 +76,11 @@
       <div class="contact-link">
         <a
           href="https://www.linkedin.com/in/sorawit-weng-601796289/"
-          style="color: white; font-size: 3.5rem"
+          class="icon-linkedin"
         >
           <i class="fa fa-linkedin-square"></i>
         </a>
-        <a
-          href="https://github.com/Tee-SRW"
-          style="color: white; font-size: 3.5rem; margin-left: 1rem"
+        <a href="https://github.com/Tee-SRW" class="icon-github"
           ><i class="fa fa-github"></i
         ></a>
       </div>
@@ -96,17 +94,13 @@
             <div class="title">About</div>
             <div class="line"></div>
             <!-- <hr style="border-bottom: 0.5rem solid #f5705b" /> -->
-            <div style="font-size: 3rem; margin-bottom: 0.8rem">
-              Sorawit Weng
-            </div>
-            <div style="display: flex">
-              <div style="font-size: 1.7rem">084-823-3387</div>
-              <div style="font-size: 1.7rem; margin-left: 1rem">
-                wyr.sorawit&#64;gmail.com
-              </div>
+            <div class="name">Sorawit Weng</div>
+            <div class="contact-container">
+              <div class="contact">084-823-3387</div>
+              <div class="contact">wyr.sorawit&#64;gmail.com</div>
             </div>
           </div>
-          <div class="profile" style="margin-top: 2rem">
+          <div class="profile">
             <div>
               I earned my degree in Computer Science from KMITL. With a strong
               interest in both software and hardware technologies, I am a

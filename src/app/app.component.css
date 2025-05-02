@@ -30,10 +30,6 @@ main {
   margin-top: 2%;
 }
 
-.line {
-  /* border-bottom: 0.1rem solid rgb(255, 209, 209); */
-}
-
 .menu {
   padding-top: 2%;
   padding-left: 12%;
@@ -91,14 +87,9 @@ main {
   margin-bottom: 1rem;
 }
 
-.proflieImg {
-  /* height: 50vh;
-  width: auto;
-  border-radius: 30%; */
+.profileImg {
   height: auto;
   width: 25vw;
-  /* margin-top: 0.5vw;
-  margin-left: 1vw; */
 }
 
 .title {
@@ -132,4 +123,144 @@ main {
 
 .job-position {
   margin: 0.8rem 0;
+}
+
+.icon-linkedin {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.icon-github {
+  color: white;
+  font-size: 3.5rem;
+  margin-left: 1rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact {
+  font-size: 1.7rem;
+}
+
+.profile {
+  margin-top: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  main {
+    font-size: 1.2rem;
+  }
+
+  .icon-linkedin {
+    font-size: 2.7rem;
+  }
+
+  .icon-github {
+    font-size: 2.7rem;
+    margin-left: 0.8rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact {
+    font-size: 1.4rem;
+  }
+
+  .exp-company {
+    font-size: 1.4rem;
+  }
+
+  .job-position {
+    margin: 0.5rem 0;
+  }
+
+  .line {
+    border-bottom: 0.4rem solid #f5705b;
+
+    margin-bottom: 0.8rem;
+  }
+
+  .line-end-content {
+    border-bottom: 0.17rem solid #f5705b;
+
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    font-size: 0.8rem;
+  }
+
+  .icon-linkedin {
+    font-size: 2rem;
+  }
+
+  .icon-github {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-container {
+    display: inline-block;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+
+  .profile {
+    margin-top: 1rem;
+  }
+
+  .exp-company {
+    font-size: 1rem;
+
+    display: inline-block;
+    /* justify-content: space-between; */
+  }
+
+  .date {
+    text-align: left;
+  }
+
+  .job-position {
+    margin: 0.4rem 0;
+  }
+
+  .line {
+    border-bottom: 0.3rem solid #f5705b;
+
+    margin-bottom: 0.6rem;
+  }
+
+  .line-end-content {
+    border-bottom: 0.13rem solid #f5705b;
+
+    margin-bottom: 1rem;
+  }
 }
